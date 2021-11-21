@@ -21,17 +21,17 @@ int main(){
 		}while(sel!=1 && sel!=2); //controllo selezione
 		switch(sel){
 			case 1:{
-				//system("cls");
+				system("clear");
 				regole();
 				cout<<"Inserisci un qualunque valore numerico per cominciare: ";
 	 			cin>>sel;
-	 			//system("cls");
+	 			system("clear");
 				break;
 			}
 		 	case 2:{
 		 		cout<<"Hai scelto l'opzione gioca. Inserisci un qualunque valore numerico per cominciare: ";
 	 			cin>>sel;
-	 			//system("cls");
+	 			system("clear");
 	 			for(int i=0;i<DIM;i++){ //inizializzazione matrici con 0
 	 				for(int c=0;c<DIM;c++){
 	 					campo[i][c]=0;
@@ -43,7 +43,7 @@ int main(){
 				cin>>riga; 
 				cout<<"Ora inserisci la colonna: ";
 				cin>>colonna;
-				//system("cls");
+				system("clear");
 				iniziale(riga,colonna,campo,casScoperte);
 				inizCampo(campo,casScoperte); //documentazione in librerie
 				casScoperte[riga][colonna]=1;
@@ -54,7 +54,7 @@ int main(){
 					cin>>riga;
 					cout<<"Inserisci la colonna: ";
 					cin>>colonna;
-					//system("cls");
+					system("clear");
 					do{
 						cout<<"Inserisci opzione desiderata: \n1- Scopri \n2- Imposta bandiera \n3- Rimuovi bandiera\n";
 						cin>>sel;

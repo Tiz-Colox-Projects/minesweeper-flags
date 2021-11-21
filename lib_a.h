@@ -6,7 +6,8 @@ const int DIM=16; //Dimensione del campo da gioco
 const int NMINE=40; //Numero di mine
 
 void benvenuto(){
-	system("color 3");
+	//system("color 3");
+	system("clear");
 	cout<<" _ __                   _____              "<<endl;
 	//Sleep(100);
 	cout<<"' )  )        _/_        /  '         _/_  "<<endl;
@@ -333,7 +334,7 @@ void posiziona(int riga,int colonna,int sel,int campo[][16],bool &gioco,int casS
 			cout<<"Impossibile scoprire."<<endl;
 		}
 		else if(campo[riga][colonna]==9){ //se nella casella c'� una mina giocatore perde
-			//system("cls");
+			system("clear");
 			cout<<"Hai perso.";
 			gioco=false;
 		}
@@ -356,7 +357,7 @@ void posiziona(int riga,int colonna,int sel,int campo[][16],bool &gioco,int casS
 }
 
 void perso(int casScoperte[][16],int campo[][16]){ //messaggio finale se gioc perde
-	//system("cls");
+	system("clear");
 	cout<<"Hai perso."<<endl;
 	for(int i=0;i<16;i++){
 		for(int c=0;c<16;c++){
