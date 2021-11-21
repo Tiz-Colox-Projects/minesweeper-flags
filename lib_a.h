@@ -1,5 +1,4 @@
 #include <iostream>
-#include <windows.h>
 #include <cstdlib>
 #include <iomanip>
 using namespace std;
@@ -9,15 +8,15 @@ const int NMINE=40; //Numero di mine
 void benvenuto(){
 	system("color 3");
 	cout<<" _ __                   _____              "<<endl;
-	Sleep(100);
+	//Sleep(100);
 	cout<<"' )  )        _/_        /  '         _/_  "<<endl;
-	Sleep(100);
+	//Sleep(100);
 	cout<<" /--'__  __.  /  __   ,-/-,o __ __  o /  __"<<endl;
-	Sleep(100);
+	//Sleep(100);
 	cout<<"/   / (_(_/|_<__(_)  (_/  <_(_)/ (_<_<__(_)"<<endl<<endl<<endl;
-	Sleep(100);
+	//Sleep(100);
 	cout<<"Inserisci l'opzione desiderata: "<<endl<<endl;
-	Sleep(100);
+	//Sleep(100);
 	cout<<"1- Regole"<<endl;
 	cout<<"2- Gioca"<<endl;
 }
@@ -334,7 +333,7 @@ void posiziona(int riga,int colonna,int sel,int campo[][16],bool &gioco,int casS
 			cout<<"Impossibile scoprire."<<endl;
 		}
 		else if(campo[riga][colonna]==9){ //se nella casella c'� una mina giocatore perde
-			system("cls");
+			//system("cls");
 			cout<<"Hai perso.";
 			gioco=false;
 		}
@@ -357,7 +356,7 @@ void posiziona(int riga,int colonna,int sel,int campo[][16],bool &gioco,int casS
 }
 
 void perso(int casScoperte[][16],int campo[][16]){ //messaggio finale se gioc perde
-	system("cls");
+	//system("cls");
 	cout<<"Hai perso."<<endl;
 	for(int i=0;i<16;i++){
 		for(int c=0;c<16;c++){
