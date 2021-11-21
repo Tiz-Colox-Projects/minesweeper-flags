@@ -15,7 +15,7 @@ int main(){
 	bool check=true; //Variabile booleana che indica quando interrompere il programma
 	srand(time(NULL));
 	while(check){
-		benvenuto(); //funzione in radicchi.h
+		benvenuto(); //funzione in lib_a.h
 		do{
 			cin>>sel;
 		}while(sel!=1 && sel!=2); //controllo selezione
@@ -38,7 +38,7 @@ int main(){
 	 					casScoperte[i][c]=0;
 					 }
 				 }
-				stampaCampo(campo,casScoperte); //funzione in radicchi.h
+				stampaCampo(campo,casScoperte); //funzione in lib_a.h
 				cout<<"Inserisci la posizione da cui cominciare, inserendo la riga: ";
 				cin>>riga; 
 				cout<<"Ora inserisci la colonna: ";

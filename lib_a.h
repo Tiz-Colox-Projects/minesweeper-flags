@@ -7,7 +7,7 @@ const int NMINE=40; //Numero di mine
 
 void benvenuto(){
 	//system("color 3");
-	system("clear");
+	
 	cout<<" _ __                   _____              "<<endl;
 	//Sleep(100);
 	cout<<"' )  )        _/_        /  '         _/_  "<<endl;
@@ -335,7 +335,7 @@ void posiziona(int riga,int colonna,int sel,int campo[][16],bool &gioco,int casS
 		}
 		else if(campo[riga][colonna]==9){ //se nella casella c'� una mina giocatore perde
 			system("clear");
-			cout<<"Hai perso.";
+			//perso(casScoperte,campo);
 			gioco=false;
 		}
 		else{
