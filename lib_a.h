@@ -147,6 +147,7 @@ void stampaCampo(int campo[][DIM], int casScoperte[][DIM]){ //Funzione che stamp
 		for(int j=0; j<DIM; j++){
 			cout<<" | ";
 			if(casScoperte[i][j]==2) cout<<"F"; //Se lamatrice casScoperte nelle relative coordinate vale 2(bandiera) stampa la bandiera
+			else if(casScoperte[i][j] == 1 && campo[i][j] == 0) cout<<"X"; //se casScoperte è 1 (casella scoperta) e campo è 0 (nessuna bomba vicina) stampa X
 			else if((casScoperte[i][j]==1) && campo[i][j]!=0) cout<<campo[i][j]; //Altrimenti se vale 1(casella scoperta) e nella casella in campo non c'� 0
 			else if(casScoperte[i][j]==9) cout<<"B";
 			else cout<<" "; //Altrimenti stampa una casella vuota
